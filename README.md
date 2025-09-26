@@ -16,7 +16,7 @@ I enjoy teaching, exploring new ideas, solving problems, and developing a deeper
 ## 🎓 Education
 - **M.Sc. Computer Science** – University Department of CS & IT, Dr. Babasaheb Ambedkar Marathwada University  
 - **B.Sc. Mathematics & Computer Science** – Maulana Azad College, Aurangabad  
-
+... and more!
 ---
 
 ## 🛠 Skills
@@ -36,7 +36,7 @@ Some of the key skills I work with (full list inside website):
 ## 🏆 Achievements
 - 📄 Presented research paper at **IEEE ICICIS 2025 Conference**  
 - 📄 Published paper in **IJSRST Journal**  
-- 🥇 **University Gold Medalist (2024)**  
+- 🥇 **University Gold Medalist** in Aavishkar 2024 Research Competition 
 - 🏅 **State Level Participant** in Aavishkar 2025 Research Competition  
 
 ---
@@ -75,10 +75,10 @@ portfolio/
 ---
 
 ## 📬 Contact Me
-- 📧 Email: your@email.com  
+- 📧 Email: itzmustaqeem@gmail.com
 - 🐙 GitHub: [S-Mustaqeem](https://github.com/S-Mustaqeem)  
-- 💼 LinkedIn: [Your LinkedIn](#)  
-- 📸 Instagram: [Your Insta](#)  
+- 💼 LinkedIn: [Mustaqeem Sayyed](https://www.linkedin.com/in/mustaqeem-sayyed)  
+- 📸 Instagram: [mustaqeem.py](https://www.instagram.com/mustaqeem.py)  
 
 ---
 
