@@ -51,28 +51,25 @@ A few highlighted works:
 ---
 
 ## 📂 Repository Structure
-│
-├── index.html
-├── about.html
-├── education.html
-├── skills.html
-├── achievements.html
-├── projects.html
-│
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── script.js
-│   ├── img/
-│   │   ├── profile.jpg
-│   │   ├── background.jpg
-│   │   ├── certificates/
-│   │   └── projects/
-│   └── docs/
-│       └── resume.pdf
-│
-└── README.md
+├── index.html<br>
+├── about.html<br>
+├── education.html<br>
+├── skills.html<br>
+├── achievements.html<br>
+├── projects.html<br>
+├── assets/<br>
+│   ├── css/<br>
+│   │   └── style.css<br>
+│   ├── js/<br>
+│   │   └── script.js<br>
+│   ├── img/<br>
+│   │   ├── profile.jpg<br>
+│   │   ├── background.jpg<br>
+│   │   ├── certificates/<br>
+│   │   └── projects/<br>
+│   └── docs/<br>
+│       └── resume.pdf<br>
+└── README.md<br>
 
 ---
 
