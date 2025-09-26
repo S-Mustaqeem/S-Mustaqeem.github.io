@@ -1,4 +1,4 @@
-# 🌐 S-Mustaqeem.github.io | Portfolio
+# 🌐 Portfolio
 
 Welcome to my personal portfolio website!  
 This site is hosted using **GitHub Pages** and built with **HTML, CSS, and JavaScript**.  
@@ -17,6 +17,7 @@ I enjoy teaching, exploring new ideas, solving problems, and developing a deeper
 - **M.Sc. Computer Science** – University Department of CS & IT, Dr. Babasaheb Ambedkar Marathwada University  
 - **B.Sc. Mathematics & Computer Science** – Maulana Azad College, Aurangabad  
 ... and more!
+  
 ---
 
 ## 🛠 Skills
@@ -50,7 +51,6 @@ A few highlighted works:
 ---
 
 ## 📂 Repository Structure
-portfolio/
 │
 ├── index.html
 ├── about.html
@@ -60,10 +60,17 @@ portfolio/
 ├── projects.html
 │
 ├── assets/
-│   ├── css/style.css
-│   ├── js/script.js
-│   └── img/
-│       └── profile.jpg
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   ├── img/
+│   │   ├── profile.jpg
+│   │   ├── background.jpg
+│   │   ├── certificates/
+│   │   └── projects/
+│   └── docs/
+│       └── resume.pdf
 │
 └── README.md
 
