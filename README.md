@@ -79,7 +79,7 @@ A few highlighted works:
 ---
 
 ## 📬 Contact Me
-- 📧 Email: [E-mail ✉️](itzmustaqeem@gmail.com)
+- 📧 Email: [E-mail](itzmustaqeem@gmail.com)
 - 🐙 GitHub: [S-Mustaqeem](https://github.com/S-Mustaqeem)  
 - 💼 LinkedIn: [Mustaqeem Sayyed](https://www.linkedin.com/in/mustaqeem-sayyed)  
 - 📸 Instagram: [mustaqeem.py](https://www.instagram.com/mustaqeem.py)  
