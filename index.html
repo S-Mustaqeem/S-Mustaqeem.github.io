@@ -3,154 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    /* ===== RESET ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #000; /* Black background */
-      color: #fff; /* White text */
-      line-height: 1.6;
-      text-align: center;
-    }
-
-    header {
-      padding: 2rem 1rem;
-    }
-
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%; /* Circle shape */
-      border: 3px solid #fff;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .subtitles {
-      font-size: 1.2rem;
-      color: #aaa;
-      margin-bottom: 1rem;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #00ffcc; /* highlight on hover */
-    }
-
-    section {
-      padding: 3rem 1rem;
-    }
-
-    h2 {
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
-      color: #00ffcc;
-    }
-
-    p {
-      max-width: 600px;
-      margin: auto;
-      font-size: 1rem;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 10px 20px;
-      background: #00ffcc;
-      color: #000;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #fff;
-    }
-
-    footer {
-      background: #111;
-      padding: 1.5rem 1rem;
-      margin-top: 2rem;
-    }
-
-    footer a {
-      color: #00ffcc;
-      margin: 0 5px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Mustaqeem Sayyed | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
 </head>
 <body>
 
   <!-- ===== HEADER ===== -->
   <header>
-    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-    <h1>Your Name</h1>
-    <p class="subtitles">Web Developer | Designer | Programmer</p>
+    <img src="assets/img/profile.jpg" alt="Mustaqeem Sayyed" class="profile-pic">
+    <h1>Mustaqeem Sayyed</h1>
+    <h2 class="subtitles">
+      <span id="typing"></span>
+    </h2>
     <nav>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#photos">Photos</a>
     </nav>
   </header>
 
-  <!-- ===== ABOUT SECTION ===== -->
+  <!-- ===== ABOUT ===== -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      Hi, I’m [Your Name], a passionate developer who loves building web applications,
-      solving problems, and creating clean designs.
+      I’m Mustaqeem Sayyed from Aurangabad, Maharashtra. Passionate about programming, research, and continuous learning, 
+      with a strong interest in mathematics. Teaching is something I enjoy, but my main focus lies in exploring new ideas, 
+      solving problems, and developing a deeper understanding of technology.  
+      I love traveling, playing chess and cricket, and reading comparative religion books.  
+      My career goal is to grow in both academia and industry, building a strong balance between research and practical applications.  
+      Strengths: quick learner, strong reasoning, problem-solving, good communication, leadership, and adaptability.
     </p>
+    <a href="about.html" class="btn">Read More</a>
   </section>
 
-  <!-- ===== PROJECTS SECTION ===== -->
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <h2>Education</h2>
+    <h3>M.Sc. Computer Science (2023–2025) – University Department of CS & IT</h3>
+    <ul>
+      <li>Internet of Things (IoT)</li>
+      <li>Computer Vision</li>
+      <li>Advanced Programming</li>
+      <li>Research in AI/ML</li>
+    </ul>
+    <h3>B.Sc. Computer Science (2020–2023) – Maulana Azad College</h3>
+    <ul>
+      <li>Physics (special focus on Energy)</li>
+      <li>PLC (Programmable Logic Control)</li>
+      <li>Assembly Programming</li>
+      <li>Workshop Management</li>
+    </ul>
+    <a href="education.html" class="btn">Read More</a>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Programming</h3>
+    <ul>
+      <li>Advanced Python</li>
+      <li>PHP</li>
+      <li>HTML + CSS</li>
+      <li>JavaScript</li>
+      <li>R Programming</li>
+      <li>Assembly Language</li>
+      <li>C++</li>
+      <li>SQL</li>
+      <li>AI & Machine Learning</li>
+      <li>IoT</li>
+      <li>Raspberry Pi Programming</li>
+      <li>Arduino Programming</li>
+    </ul>
+
+    <h3>Other Skills</h3>
+    <ul>
+      <li>Problem Solving</li>
+      <li>Reasoning Ability</li>
+      <li>Research & Analysis</li>
+      <li>Leadership</li>
+      <li>Teamwork</li>
+      <li>Communication Skills</li>
+      <li>Critical Thinking</li>
+      <li>Adaptability</li>
+      <li>Teaching & Mentoring</li>
+      <li>Project Management</li>
+    </ul>
+
+    <h3>Languages</h3>
+    <ul>
+      <li>English</li>
+      <li>Hindi</li>
+      <li>Marathi</li>
+      <li>Urdu</li>
+      <li>Basic Arabic</li>
+      <li>Basic Persian</li>
+    </ul>
+    <a href="skills.html" class="btn">Read More</a>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements">
+    <h2>Achievements & Certifications</h2>
+    <ul>
+      <li>IEEE Conference Presentation – ICICIS 2025</li>
+      <li>Research Paper Published – IJSRST 2025</li>
+      <li>Aavishkar 2025 – State Level Participant & University Level Gold Medalist (2024)</li>
+      <li>Cyber Suraksha Certification – Microsoft & Tata Strive (Nov 2023)</li>
+      <li>Data Science Masters 2.0 – PW Skills (Ongoing)</li>
+      <li>Object-Oriented Programming Concepts Deep Dive – PW Skills (Dec 2023)</li>
+      <li>C++ Foundation – PW Skills (Dec 2023)</li>
+      <li>Python Programming for Beginners – PW Skills (Dec 2023)</li>
+      <li>Data Analytics – IBM SkillsBuild & CSRBOX (Nov 2023)</li>
+      <li>Mastering Cloud Computing Workshop – PM-USHA (Feb 2025)</li>
+      <li>Agentic AI: From Learner to Builder – IBM SkillsBuild & CSRBOX (Aug 2025)</li>
+      <li>...and more</li>
+    </ul>
+    <a href="achievements.html" class="btn">Read More</a>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
   <section id="projects">
     <h2>Projects</h2>
-    <p>
-      Here are some of my projects. (You can replace this text with cards or links later.)
-    </p>
+    <ul>
+      <li>Real-Time Driver Drowsiness Detection (Eyes, Head Posture & Mouth)</li>
+      <li>IoT Smart Garden System</li>
+      <li>Multimedia File Handler with Tkinter</li>
+      <li>Personal Portfolio Website</li>
+      <li>Ongoing Research Projects</li>
+    </ul>
+    <a href="projects.html" class="btn">Read More</a>
   </section>
 
-  <!-- ===== CONTACT SECTION ===== -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@example.com</p>
-    <a href="mailto:yourname@example.com" class="btn">Send Email</a>
+  <!-- ===== PHOTOS ===== -->
+  <section id="photos">
+    <h2>Gallery</h2>
+    <p>Currently no photos uploaded. (Will add in future)</p>
+    <a href="photos.html" class="btn">View More</a>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2025 Your Name | Portfolio</p>
+    <p>© 2025 Mustaqeem Sayyed | All Rights Reserved</p>
     <p>
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      <a href="https://github.com/S-Mustaqeem" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/mustaqeem-sayyed" target="_blank">LinkedIn</a> |
+      <a href="mailto:your-email@example.com">Email</a>
     </p>
   </footer>
 
 </body>
-</html>
+        </html>
