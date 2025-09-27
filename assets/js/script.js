@@ -1,80 +1,44 @@
-/* ===== Animated Typing Effect ===== */
-const subtitles = ["Python Developer", "Researcher", "Learner"];
-let i = 0;
-let j = 0;
-let currentSubtitle = "";
-let isDeleting = false;
-const speed = 150; // typing speed
+// script.js
 
-function typeEffect() {
-  const subtitleElement = document.querySelector(".subtitles");
-  
-  if (!isDeleting && j <= subtitles[i].length) {
-    currentSubtitle = subtitles[i].substring(0, j++);
-    subtitleElement.textContent = currentSubtitle;
-  } 
-  if (isDeleting && j >= 0) {
-    currentSubtitle = subtitles[i].substring(0, j--);
-    subtitleElement.textContent = currentSubtitle;
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  const roles = [
+    "Python Developer",
+    "Researcher",
+    "Learner"
+  ];
 
-  if (j === subtitles[i].length + 1) {
-    isDeleting = true;
-    setTimeout(typeEffect, 1000); // wait 1 sec at end
-    return;
-  }
+  let index = 0;       // which role
+  let charIndex = 0;   // which character in that role
+  let currentRole = "";
+  let isDeleting = false;
+  const typingElement = document.getElementById("typing");
 
-  if (isDeleting && j === 0) {
-    isDeleting = false;
-    i = (i + 1) % subtitles.length; // move to next subtitle
-  }
+  function type() {
+    const fullRole = roles[index];
 
-  setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
-}
-
-document.addEventListener("DOMContentLoaded", typeEffect);
-
-/* ===== Scroll Effect: Hide Name on Scroll ===== */
-window.addEventListener("scroll", () => {
-  const headerText = document.querySelector(".header-text");
-  const scrollY = window.scrollY;
-
-  if (scrollY > 50) {
-    headerText.style.opacity = 0; // fade out name
-    headerText.style.transition = "opacity 0.5s ease";
-  } else {
-    headerText.style.opacity = 1; // show name
-  }
-});
-
-/* ===== Smooth Scroll for Buttons ===== */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  });
-});
-/* ===== Scroll Animation for Sections ===== */
-const sections = document.querySelectorAll("section");
-
-function scrollAnimation() {
-  const triggerBottom = window.innerHeight * 0.85;
-
-  sections.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-
-    if (sectionTop < triggerBottom) {
-      section.classList.add("show");
+    if (isDeleting) {
+      // remove characters
+      currentRole = fullRole.substring(0, charIndex--);
     } else {
-      section.classList.remove("show");
+      // add characters
+      currentRole = fullRole.substring(0, charIndex++);
     }
-  });
-}
 
-window.addEventListener("scroll", scrollAnimation);
+    typingElement.textContent = currentRole;
 
-/* Trigger once on page load */
-scrollAnimation();
+    if (!isDeleting && charIndex === fullRole.length) {
+      // wait before deleting
+      isDeleting = true;
+      setTimeout(type, 1200);
+      return;
+    } else if (isDeleting && charIndex === 0) {
+      // move to next word
+      isDeleting = false;
+      index = (index + 1) % roles.length;
+    }
+
+    setTimeout(type, isDeleting ? 100 : 150);
+  }
+
+  type();
+});
