@@ -35,7 +35,28 @@ header {
   flex-wrap: wrap;
   position: relative;
 }
+/* ===== Profile Picture ===== */
+.profile-pic {
+  width: 180px;   /* Desktop size */
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00bcd4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.8);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+}
 .header-text {
   flex: 1;
 }
