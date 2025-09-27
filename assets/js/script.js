@@ -57,3 +57,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+/* ===== Scroll Animation for Sections ===== */
+const sections = document.querySelectorAll("section");
+
+function scrollAnimation() {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+
+    if (sectionTop < triggerBottom) {
+      section.classList.add("show");
+    } else {
+      section.classList.remove("show");
+    }
+  });
+}
+
+window.addEventListener("scroll", scrollAnimation);
+
+/* Trigger once on page load */
+scrollAnimation();
