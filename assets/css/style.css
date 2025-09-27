@@ -108,3 +108,21 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+/* ===== SOCIAL ICONS ===== */
+.social-icons {
+  display: flex;           /* arrange icons in a row */
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  gap: 15px;               /* space between icons */
+  margin-top: 1rem;
+}
+
+.social-icons a img {
+  width: 30px;             /* size of icon */
+  height: 30px;            /* size of icon */
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);   /* zoom effect on hover */
+}
