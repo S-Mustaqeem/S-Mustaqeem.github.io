@@ -49,7 +49,20 @@ header {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(0, 188, 212, 0.8);
 }
+/* Desktop and mobile responsive */
+.profile-pic {
+  width: 180px;    /* displayed width */
+  height: 180px;   /* displayed height */
+  border-radius: 50%; 
+  object-fit: cover; /* crops to circle neatly */
+}
 
+@media (max-width: 768px) {
+  .profile-pic {
+    width: 150px;   /* smaller on mobile */
+    height: 150px;
+  }
+}
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .profile-pic {
